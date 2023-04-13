@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+
+                /* header-icons */
+            /* containers */
+#icons{
+    display: grid;
+    grid-template-areas: 'icon rectangle avatar';
+
+}
+.icons{
+    margin-top: 0.625rem;
+    margin-bottom: 0.925rem;
+    display: inline;
+}
+            /* icons */
+#rectangle{
+    grid-area: rectangle;
+    align-self: center;
+    justify-self: center;
+}
+#paw{
+    grid-area: rectangle;
+    align-self: center;
+    justify-self: center;
+}
+
+#person{
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+}
+
+#icons-icon{
+    grid-area: avatar;
+    align-self: center;
+    justify-self: center;
+}
+
+                /* main body */
+
+
+.main-content{
+    display: grid;
+    grid-template-rows:   0rem 10rem 10rem 10rem 0rem ;
+    grid-template-columns: .938rem  6.875rem 6.875rem 6.875rem.938rem;
+    justify-content: center;
+}
+                
+                
+.photo {
+    display: inline; /* change display property */
+    object-fit: cover;
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 5; /* span across all columns */
+    border-radius: 10px;
+  }
+                
+
+h2{
+    font-family: poppins;
+    padding-left: .8rem;
+    font-size: 2rem;
+    display: inline;
+    justify-self: left;
+    color: #F8F8F8;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+
+p{
+    font-family: Poppins;
+    padding-left: .8rem;
+    padding-top: 2.9rem;
+    text-align: left;
+    align-self: center;
+    color: #B7B7B7;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start:2;
+    grid-column-end: -1;
+    font-size: 1.3rem;
+}
+#liked{
+    width:15rem;
+    rotate: -15deg;
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    visibility: hidden;
+}
+#dislike{
+    width:15rem;
+    rotate: -15deg;
+    visibility: hidden;
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+h1{
+    text-align: center;
+    margin: 25% 25%;
+
+}
+
+/* bottom icons */
+
+.buttons{
+    display: grid;
+    grid-template-areas: 'x-icon heart-icon';
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.circle{
+    grid-area: x-icon;
+    align-self: center;
+    justify-self: center;
+}
+
+.circle2{
+    grid-area: heart-icon;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.heart{
+    grid-area: heart-icon;
+    align-self: center;
+    justify-self: center;
+    padding: 33px 33px 33px 33px;
+    margin-bottom: 1.012rem;
+}
+
+
+.x-icon{
+    grid-area: x-icon;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1.012rem;
+    padding: 33px 33px 33px 33px;
+}
+
+/* @media */
+
+@media (max-width:322px){
+    .main-content{
+        display: grid;
+        grid-template-rows:   0rem 8rem 8rem 8rem 0rem ;
+        grid-template-columns: .938rem  6rem 6rem 6rem.938rem;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+                    
+                    
+    .photo {
+        display: inline; /* change display property */
+        object-fit: cover;
+        max-width: 100%;
+        grid-row-start: 1;
+        grid-row-end: -1;
+        grid-column-start: 2;
+        grid-column-end: 5; /* span across all columns */
+      }
+                    
+    
+    h2{
+        font-family: poppins;
+        padding-left: .8rem;
+        font-size: 2rem;
+        display: inline;
+        justify-self: left;
+        color: #F8F8F8;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start:2;
+        grid-column-end: 4;
+    }
+    
+    p{
+        font-family: Poppins;
+        padding-left: .8rem;
+        padding-top: 4rem;
+        text-align: left;
+        align-self: center;
+        color: #B7B7B7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start:2;
+        grid-column-end: 5;
+        font-size: 1.5rem;
+    }
+}
